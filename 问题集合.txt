@@ -1,2 +1,4 @@
-1.在使用vue-router 时，<router-view>下的子组件在写布局样式的时候要注意position: fixed;的用法，如果使用此定位方式将不再受 router 的控制，即，不管怎么切换 router，此结构将一直存在，这就是为什么你的“页签无法切换”的原因
+1.安装toolkit报错，使用淘宝镜像安装  npm install -g weex-toolkit@1.3.0  --registry=https://registry.npm.taobao.org
+
+2.在使用vue-router 时，<router-view>下的子组件在写布局样式的时候要注意position: fixed;的用法，如果使用此定位方式将不再受 router 的控制，即，不管怎么切换 router，此结构将一直存在，这就是为什么你的“页签无法切换”的原因
 解决方案，将Home.vue上的header-wrapper样式更换 position 定位，使用relative 或 absolute
